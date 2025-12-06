@@ -1,10 +1,8 @@
 name: Publish Package to npmjs
 
 on:
-  pull_request:
-    types: [labeled]
-  # release:
-  #   types: [published]
+  release:
+    types: [published]
 
 jobs:
   publish:
@@ -21,11 +19,8 @@ jobs:
         with:
           node-version: '24.x'
           registry-url: 'https://registry.npmjs.org'
+          token: ${{ secrets.NPM_TOKEN }} 
 
-      # install dependencies
       - run: npm ci
 
-      # publish with provenance
       - run: npm publish --provenance --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
