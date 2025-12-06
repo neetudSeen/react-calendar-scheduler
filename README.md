@@ -1,10 +1,10 @@
 # React Calendar Scheduler
 
 ## Setup
-### `npm i react-calendar-timeline-scheduler`
+- `npm i react-calendar-timeline-scheduler`
 
 For styles use
-`import 'react-calendar-timeline-scheduler/dist/index.css';` 
+- `import 'react-calendar-timeline-scheduler/dist/index.css';` 
 
 ## Day (ResourceTimelineView)
 <img width="1142" height="437" alt="Screenshot 2025-12-06 at 21 12 46" src="https://github.com/user-attachments/assets/aff4325c-4b63-470e-bc39-ae95c746cca9" />
