@@ -1,5 +1,11 @@
 # React Calendar Scheduler
 
+## Setup
+### `npm i react-calendar-timeline-scheduler`
+
+For styles use
+`import 'react-calendar-timeline-scheduler/dist/index.css';` 
+
 ## Day (ResourceTimelineView)
 <img width="1142" height="437" alt="Screenshot 2025-12-06 at 21 12 46" src="https://github.com/user-attachments/assets/aff4325c-4b63-470e-bc39-ae95c746cca9" />
 <img width="1145" height="531" alt="Screenshot 2025-12-06 at 21 13 06" src="https://github.com/user-attachments/assets/d4f82545-15cb-4783-b132-13269308fff7" />
@@ -15,6 +21,9 @@
 
 ## Toolbar
 - Customise your own by passing toolbar attribute
+```
+<Scheduler toolbar={ReactElement} />
+```
 
 ## Attributes
 ```

@@ -2,7 +2,10 @@ import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 import typescript from '@rollup/plugin-typescript';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
-import postcss from 'rollup-plugin-postcss';
+import postcss from "rollup-plugin-postcss";
+
+import tailwindcss from '@tailwindcss/postcss';
+import autoprefixer from 'autoprefixer';
 
 export default {
   input: 'lib/index.ts',
@@ -28,15 +31,17 @@ export default {
       tsconfig: './tsconfig.build.json',
       declaration: true,
       declarationDir: 'dist',
-      noEmit: true,
+      noEmit: false,
       rootDir: 'lib',
-      exclude: ['**/*.test.ts', '**/*.test.tsx'],
+      exclude: [],
     }),
     postcss({
-      extract: true,
-      minimize: true,
-      modules: false,
-      use: ['sass'],
+      extract: 'index.css', 
+      plugins: [
+        tailwindcss(),
+        autoprefixer,
+      ],
+      extensions: ['.css'], 
     }),
   ],
   external: ['react', 'react-dom', 'dayjs'],

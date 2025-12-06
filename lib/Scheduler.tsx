@@ -7,7 +7,6 @@ import { MonthView } from './Components/MonthView';
 import { ResourceTimelineView } from './Components/ResourceTimelineView';
 import { TimeGridView } from './Components/TimeGridView';
 import { Toolbar } from './Components/Toolbar';
-import './index.css';
 import type { CalendarEvent, CalendarView, SchedulerProps, SchedulerTranslations } from './types/types';
 import { getMonthDates, getWeekDates, isSameDay } from './utils/calendarUtils';
 
