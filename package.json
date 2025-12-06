@@ -21,7 +21,7 @@
     "url": "https://github.com/neetudSeen/react-calendar-timeline-scheduler/issues"
   },
   "homepage": "https://github.com/neetudSeen/react-calendar-timeline-scheduler#readme",
-  "version": "2.3.0",
+  "version": "1.0.0",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -39,7 +39,7 @@
   "dependencies": {
     "dayjs": "^1.11.19",
     "rollup": "^4.53.3",
-    "tailwind": "^4.0.0",
+    "tailwind": "^2.3.1",
     "tailwindcss": "^4.1.17"
   },
   "peerDependencies": {
@@ -56,14 +56,10 @@
     "@types/react-dom": "^19.2.3",
     "@types/rollup-plugin-peer-deps-external": "^2.2.6",
     "@vitejs/plugin-react": "^5.1.1",
-    "autoprefixer": "^10.4.0",
-    "css-loader": "^6.11.0",
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
-    "postcss": "^8.4.0",
-    "postcss-loader": "^7.3.4",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "rollup": "^4.0.0",
