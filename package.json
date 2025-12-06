@@ -15,7 +15,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/neetudSeen/react-calendar-scheduler"
+    "url": "git+https://github.com/neetudSeen/react-calendar-scheduler.git"
   },
   "bugs": {
     "url": "https://github.com/neetudSeen/react-calendar-scheduler/issues"
