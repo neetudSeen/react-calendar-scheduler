@@ -23,4 +23,6 @@ jobs:
 
       - run: npm ci
 
+      - run: npm config delete always-auth || true
+
       - run: npm publish --provenance --access public

@@ -21,7 +21,7 @@
     "url": "https://github.com/neetudSeen/react-calendar-scheduler/issues"
   },
   "homepage": "https://github.com/neetudSeen/react-calendar-scheduler#readme",
-  "version": "1.0.0",
+  "version": "2.2.0",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
