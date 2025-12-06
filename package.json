@@ -1,5 +1,5 @@
 {
-  "name": "react-calendar-scheduler",
+  "name": "react-calendar-timeline-scheduler",
   "private": false,
   "author": "Neetud Seen",
   "keywords": [
@@ -15,12 +15,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/neetudSeen/react-calendar-scheduler.git"
+    "url": "git+https://github.com/neetudSeen/react-calendar-timeline-scheduler.git"
   },
   "bugs": {
-    "url": "https://github.com/neetudSeen/react-calendar-scheduler/issues"
+    "url": "https://github.com/neetudSeen/react-calendar-timeline-scheduler/issues"
   },
-  "homepage": "https://github.com/neetudSeen/react-calendar-scheduler#readme",
+  "homepage": "https://github.com/neetudSeen/react-calendar-timeline-scheduler#readme",
   "version": "2.3.0",
   "type": "module",
   "main": "dist/index.js",
