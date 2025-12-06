@@ -52,7 +52,7 @@ export const Toolbar: React.FC<ToolbarProps> = ({
       <div className="flex flex-row items-center justify-start gap-2">
         <button
           onClick={onPrevious}
-          className="inline-flex h-8 items-center justify-center rounded-md border border-gray-300 bg-white px-2 text-sm text-gray-700 transition-colors hover:border-blue-500 hover:text-blue-500 focus:outline-none focus:border-blue-500 focus:text-blue-500"
+          className="inline-flex h-8 cursor-pointer items-center justify-center rounded-md border border-gray-300 bg-white px-2 text-sm text-gray-700 transition-colors hover:border-blue-500 hover:text-blue-500 focus:outline-none focus:border-blue-500 focus:text-blue-500"
           title={translations.previous}
         >
           <svg
@@ -72,7 +72,7 @@ export const Toolbar: React.FC<ToolbarProps> = ({
 
         <button
           onClick={onToday}
-          className="inline-flex h-8 items-center justify-center rounded-md border border-gray-300 bg-white px-4 text-sm text-gray-700 transition-colors hover:border-blue-500 hover:text-blue-500 focus:outline-none focus:border-blue-500 focus:text-blue-500"
+          className="inline-flex h-8 cursor-pointer items-center justify-center rounded-md border border-gray-300 bg-white px-4 text-sm text-gray-700 transition-colors hover:border-blue-500 hover:text-blue-500 focus:outline-none focus:border-blue-500 focus:text-blue-500"
           title={translations.today}
         >
           {translations.today}
@@ -80,7 +80,7 @@ export const Toolbar: React.FC<ToolbarProps> = ({
 
         <button
           onClick={onNext}
-          className="inline-flex h-8 items-center justify-center rounded-md border border-gray-300 bg-white px-2 text-sm text-gray-700 transition-colors hover:border-blue-500 hover:text-blue-500 focus:outline-none focus:border-blue-500 focus:text-blue-500"
+          className="inline-flex h-8 cursor-pointer items-center justify-center rounded-md border border-gray-300 bg-white px-2 text-sm text-gray-700 transition-colors hover:border-blue-500 hover:text-blue-500 focus:outline-none focus:border-blue-500 focus:text-blue-500"
           title={translations.next}
         >
           <svg
@@ -109,7 +109,7 @@ export const Toolbar: React.FC<ToolbarProps> = ({
           {resourceEnabled ? (
             <button
               onClick={() => changeView("resourceDay")}
-              className={`inline-flex h-8 items-center justify-center px-4 text-sm border border-gray-300 rounded-l-md transition-colors focus:outline-none focus:z-10 ${
+              className={`inline-flex h-8 cursor-pointer items-center justify-center px-4 text-sm border border-gray-300 rounded-l-md transition-colors focus:outline-none focus:z-10 ${
                 currentView === "resourceDay"
                   ? "bg-blue-500 text-white border-blue-500 hover:bg-blue-600"
                   : "bg-white text-gray-700 hover:border-blue-500 hover:text-blue-500"
@@ -121,7 +121,7 @@ export const Toolbar: React.FC<ToolbarProps> = ({
           ) : (
             <button
               onClick={() => changeView("week")}
-              className={`inline-flex h-8 items-center justify-center px-4 text-sm border border-gray-300 rounded-l-md transition-colors focus:outline-none focus:z-10 ${
+              className={`inline-flex h-8 items-center cursor-pointer justify-center px-4 text-sm border border-gray-300 rounded-l-md transition-colors focus:outline-none focus:z-10 ${
                 currentView === "week"
                   ? "bg-blue-500 text-white border-blue-500 hover:bg-blue-600"
                   : "bg-white text-gray-700 hover:border-blue-500 hover:text-blue-500"
@@ -134,7 +134,7 @@ export const Toolbar: React.FC<ToolbarProps> = ({
 
           <button
             onClick={() => changeView("month")}
-            className={`inline-flex h-8 items-center justify-center px-4 text-sm border border-gray-300 border-l-0 rounded-r-md -ml-px transition-colors focus:outline-none focus:z-10 ${
+            className={`inline-flex h-8 items-center cursor-pointer justify-center px-4 text-sm border border-gray-300 border-l-0 rounded-r-md -ml-px transition-colors focus:outline-none focus:z-10 ${
               currentView === "month"
                 ? "bg-blue-500 text-white border-blue-500 hover:bg-blue-600 border-2"
                 : "bg-white text-gray-700 hover:border-blue-500 hover:text-blue-500"
@@ -151,7 +151,7 @@ export const Toolbar: React.FC<ToolbarProps> = ({
         {onNewEvent && (
           <button
             onClick={onNewEvent}
-            className="inline-flex h-8 items-center justify-center rounded-md border border-blue-500 bg-blue-500 px-4 text-sm text-white transition-colors hover:bg-blue-600 hover:border-blue-600 focus:outline-none focus:bg-blue-600"
+            className="inline-flex h-8 cursor-pointer items-center justify-center rounded-md border border-blue-500 bg-blue-500 px-4 text-sm text-white transition-colors hover:bg-blue-600 hover:border-blue-600 focus:outline-none focus:bg-blue-600"
           >
             + {smallScreen ? "" : translations.newEvent}
           </button>
